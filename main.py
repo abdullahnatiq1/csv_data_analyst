@@ -6,6 +6,7 @@ def main():
     csv = input("Enter CSV file path: ")
 
     llm = ChatGroq(api_key = groqAPIkey, model = modelName)
+    print("CSV loaded")
 
     agent = create_csv_agent(
         llm = llm,
